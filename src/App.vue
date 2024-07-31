@@ -2,9 +2,11 @@
 import { store } from './store.js';
 import axios from 'axios';
 
+import AppHeader from './components/AppHeader.vue';
+
 export default {
   components: {
-
+    AppHeader
   },
   created() {
     this.getCharactersList()
@@ -24,12 +26,13 @@ export default {
 }
 </script>
 <template>
+  <AppHeader />
   <div class="container">
       <div class="row">
-
+        
       </div>
   </div>
 </template>
 <style lang="scss">
-  
+  @import './styles/generals.scss'
 </style>
