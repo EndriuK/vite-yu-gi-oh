@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template lang="">
-    <header>
+    <header class="my-2">
         <div class="container">
             <h1>YU-GI-OH Api</h1>
         </div>

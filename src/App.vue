@@ -3,10 +3,12 @@ import { store } from './store.js';
 import axios from 'axios';
 
 import AppHeader from './components/AppHeader.vue';
+import CharacterList from './components/CharactersList.vue';
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    CharacterList,
   },
   created() {
     this.getCharactersList()
@@ -27,12 +29,12 @@ export default {
 </script>
 <template>
   <AppHeader />
-  <div class="container">
-      <div class="row">
-        
-      </div>
-  </div>
+  <main>
+    <CharactersList />
+  </main>
 </template>
 <style lang="scss">
-  @import './styles/generals.scss'
+@import "./components/syles/generals.scss"
+
 </style>
+
