@@ -1,13 +1,31 @@
 <script>
+import { store} from './store.js',
+import axios from 'axios',
+
 export default {
-  
+  components: {
+
+  },
+  created() {
+    
+  },
+  methods {
+
+  },
+  data() {
+    return {
+      store,
+    }
+  }
 }
 </script>
-<template lang="">
-  <div>
-    
+<template>
+  <div class="container">
+      <div class="row">
+
+      </div>
   </div>
 </template>
-<style lang="">
+<style lang="scss">
   
 </style>
