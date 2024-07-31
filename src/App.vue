@@ -1,16 +1,20 @@
 <script>
-import { store} from './store.js',
-import axios from 'axios',
+import { store } from './store.js';
+import axios from 'axios';
 
 export default {
   components: {
 
   },
   created() {
-    
+    this.getCharactersList()
   },
-  methods {
-
+  methods: {
+    getCharactersList(){
+      axios.get(store.apiUrl).then((result) => {
+        store.CharacterList = result.data
+      });
+    }
   },
   data() {
     return {
