@@ -1,5 +1,5 @@
-
- <script>
+<script>
+import { store } from './store';
 import AppHeader from './components/AppHeader.vue';
 import CardsList from './components/CardsList.vue';
 
@@ -7,11 +7,19 @@ import CardsList from './components/CardsList.vue';
   components: {
     AppHeader,
     CardsList,
-  }
+  },
+  created() {
+
+  },
+  methods: {
+    showText() {
+      alert(store.searchText);
+    }
+  },
  }
  </script>
  <template lang="">
-  <AppHeader />
+  <AppHeader @search="showText()" />
   <main>
     <CardsList />
   </main>
