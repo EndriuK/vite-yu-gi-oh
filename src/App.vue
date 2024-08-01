@@ -1,14 +1,14 @@
-<script>
+<!-- <script>
 import { store } from './store.js';
 import axios from 'axios';
 
 import AppHeader from './components/AppHeader.vue';
-import CharacterList from './components/CharactersList.vue';
+import CharactersList from './components/CharactersList.vue';
 
 export default {
   components: {
     AppHeader,
-    CharacterList,
+    CharactersList,
   },
   created() {
     this.getCharactersList()
@@ -16,7 +16,7 @@ export default {
   methods: {
     getCharactersList(){
       axios.get(store.apiUrl).then((result) => {
-        store.CharacterList = result.data
+        store.CharactersList = result.data.data
       });
     }
   },
@@ -35,6 +35,27 @@ export default {
 </template>
 <style lang="scss">
 @import "./components/syles/generals.scss"
-
 </style>
+ -->
 
+
+ <script>
+import AppHeader from './components/AppHeader.vue';
+import CardsList from './components/CardsList.vue';
+
+ export default {
+  components: {
+    AppHeader,
+    CardsList,
+  }
+ }
+ </script>
+ <template lang="">
+  <AppHeader />
+  <main>
+    <CardsList />
+  </main>
+ </template>
+ <style lang="scss">
+  @import './components/syles/generals.scss'
+ </style>
