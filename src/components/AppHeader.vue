@@ -33,14 +33,14 @@ export default {
                 <div class="col-6">
                     <h1>Yu-Gi-Oh Api</h1>
                 </div>
-                <div class="col-6">
+                <!-- <div class="col-6">
                     <input type="text" class="form-control mt-3" placeholder="Search" v-model="store.searchText" @keyup.enter="$emit('search')">
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     header {
         background-color: #fff;
         color: #000;

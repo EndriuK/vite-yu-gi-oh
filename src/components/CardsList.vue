@@ -3,11 +3,13 @@ import axios from 'axios';
 import { store } from '../store.js';
 import DetailCard from './DetailCard.vue';
 import AppLoader from './AppLoader.vue';
+import FilterCards from './FilterCards.vue';
 
 export default {
     components: {
         DetailCard,
-        AppLoader
+        AppLoader,
+        FilterCards
     },
     data() {
         return{
